@@ -244,7 +244,7 @@ public class EntityManagerFactoryImpl implements EntityManagerFactory {
                 Class<?> clazz = Class.forName(className);
                 URL resource = clazz.getResource(clazz.getSimpleName() + ".class");
                 if (resource.getProtocol().equals("jar")) {
-                    libs.add(resource.getFile().split("!")[0].substring(6));
+                    libs.add(resource.getFile().split("!")[0].substring(5));
                 } else if (resource.getProtocol().equals("file")) {
                     libs.add(resource.getFile().substring(1));
                 } else {
