@@ -2,3 +2,5 @@
 .svn
 *.iml
 
+
+.DS_Store
